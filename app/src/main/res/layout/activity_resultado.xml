@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_voltar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#61BC86"
     tools:context=".ResultadoActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_resultado"
         android:layout_width="270dp"
         android:layout_height="236dp"
         android:layout_marginBottom="8dp"
@@ -28,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/image_resultado"
         app:srcCompat="@drawable/botao_voltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
