@@ -3,7 +3,7 @@ package com.fatimasousa.caraoucoroa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_resultado.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        image_jogar.setOnClickListener {
+        imageButton.setOnClickListener {
 
             val intent = Intent(applicationContext, ResultadoActivity::class.java)
             //gera número randomico
@@ -23,7 +23,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-
-
     }
 }

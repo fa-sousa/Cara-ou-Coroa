@@ -3,6 +3,7 @@ package com.fatimasousa.caraoucoroa
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_resultado.*
+import kotlinx.android.synthetic.main.activity_resultado.button_voltar
 
 class ResultadoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,5 +19,8 @@ class ResultadoActivity : AppCompatActivity() {
             image_resultado.setImageResource(R.drawable.moeda_coroa)
         }
 
+        button_voltar.setOnClickListener {
+            finish()
+        }
     }
 }
